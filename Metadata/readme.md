@@ -16,5 +16,12 @@ Metadata is like the instruction manual for your dataset. It provides context, s
 Now, let’s roll up our sleeves and get to work preparing metadata that makes your ML project sparkle! ✨
 
 ---
+```bash
+import pandas as pd
+df1 = pd.read_excel("META_file.xlsx", sheet_name=0) # for metadata
+df2 = pd.read_excel("SraRunTable.xlsx", sheet_name=0) # for the sra run id's
+merged=pd.merge(df2, df1, on="Sample Name")# to merge sra run table with metadata on Sample Name
+merged.to_excel("merged_file.xlsx", index=False) # and save with name
+merged
 
-
+```
