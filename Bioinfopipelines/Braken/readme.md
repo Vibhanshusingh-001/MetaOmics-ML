@@ -55,8 +55,8 @@ bracken -d kraken_database \
 
 ## Summary
 
-This Bracken command takes the Kraken2 classification report (`ERR14218891.k2report`) and refines it to estimate **species-level abundances** (`-l S`), assuming **100 bp read length** (`-r 100`).
-It will only include taxa supported by at least **10 reads** (`-t 10`), and the results will be saved in:
+This Bracken command  it to estimate **species-level abundances** (`-l S`), assuming **100 bp read length** (`-r 100`).
+It will only include taxa supported by at least **10 reads** 
 
 
 
