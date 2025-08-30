@@ -40,3 +40,17 @@ Based on the Bracken analysis:
 | Reads not distributed        | 384             | 279             |
 | Unclassified reads           | 116,208         | 127,530         |
 
+## output 
+<img width="1912" height="892" alt="image" src="https://github.com/user-attachments/assets/675a8c55-c267-453e-ab2f-ca06de75fb0e" />
+
+## output 
+<img width="1912" height="893" alt="image" src="https://github.com/user-attachments/assets/7604b26b-5807-4217-ac1b-170e00c049f5" />
+
+## Interpreatation 
+1. **Percentage**: The percentage of reads assigned to the given taxon.
+2. **Number of Reads**: The absolute number of reads assigned to the taxon.
+3. **Taxonomic Rank**: A single-letter code indicating the taxonomic level (e.g., R = root, K = kingdom, P = phylum, C = class, O = order, F = family, G = genus, S = species).
+4. **Taxon Name**: The scientific name of the taxon.
+## Command to merge braken outputs
+```bash
+python ../combine_bracken_outuptu.py --files  *out -o combined_otu_data.tsv
