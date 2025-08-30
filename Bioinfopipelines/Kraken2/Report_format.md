@@ -41,7 +41,7 @@
 
 ## **2. Ssample_2: `ERR14218664.kraken2.out`**
 
-This is the **Kraken2 classification output file**, which lists the classification result for each individual read.
+#### This is the *Kraken2 classification output file*, which lists the classification result for each individual read.
 <img width="1914" height="888" alt="Screenshot 2025-08-30 131019" src="https://github.com/user-attachments/assets/7e17a874-f213-4a14-b33e-600b26cfd2b1" />
 
 ### Column meanings:
@@ -52,7 +52,7 @@ This is the **Kraken2 classification output file**, which lists the classificati
    * `U` → Unclassified
 2. **Read ID** → Identifier of the read (e.g., `ERR14218664.17.1`).
 3. **NCBI TaxID** → Taxon the read was classified to (0 if unclassified).
-4. **Length of sequence** → Usually 101 bp in your case.
+4. **Length of sequence** → Usually 101 bp in my case.
 5. **Classification mapping** → Shows how k-mers from the read mapped across taxa in the Kraken database, e.g.:
 
    * `816:2 0:10 816:1` → means 2 k-mers mapped to taxon 816, 10 mapped to unclassified (0), 1 mapped to taxon 816, etc.
@@ -73,4 +73,3 @@ This is the **Kraken2 classification output file**, which lists the classificati
 * The **`.k2report` file** is a **summary table** (read counts and percentages at each taxonomic rank).
 * The **`.kraken2.out` file** is a **per-read classification file** (shows classification of each read and how its k-mers mapped).
 
-Would you like me to also create a **Markdown summary table** for these two outputs (like a report format you can use in documentation)?
