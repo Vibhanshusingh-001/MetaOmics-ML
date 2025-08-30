@@ -11,7 +11,7 @@ fastp -i sra_data/ERR14218891/ERR14218891_pass_1.fastq.gz \
       -j fastp_output/ERR14218891_fastp.json \
       -h fastp_output/ERR14218891_fastp.html
 ```
-# Breakdown of `fastp` Command Options (Table Format)
+# Breakdown of `fastp` Command Options 
 
 | Option | Description | Example |
 |--------|-------------|---------|
