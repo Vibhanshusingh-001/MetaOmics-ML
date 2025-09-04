@@ -176,10 +176,8 @@ $$
 
 ```
 
-P(score(y) \mid hyperparameters(x))
 
-
-Here the surrogate function models the relationship between hyperparameters *x* and the score *y*.  
+Here the surrogate function models the relationship between hyperparameters x and the score y.  
 By updating this model iteratively with each new evaluation, Bayesian optimization makes more informed decisions.  
 
 Common surrogate models used in Bayesian optimization include:
