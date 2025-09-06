@@ -218,7 +218,3 @@ Developer & Maintainer of *MetaOmics-ML*
 ---
 
 ✨ *MetaOmics-ML empowers researchers to harness the synergy of metagenomics and machine learning for next-generation biological discovery.*
-
-```
-
-
