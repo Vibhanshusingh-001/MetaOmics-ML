@@ -57,6 +57,8 @@ bracken -d kraken_database \
 
 This Bracken command  it to estimate **species-level abundances** (`-l S`), assuming **100 bp read length** (`-r 100`).
 It will only include taxa supported by at least **10 reads** 
-
+## Command to merge braken output
+```python
+python ../combine_bracken_outuptu.py --files  *out -o combined_otu_data.tsv
 
 
