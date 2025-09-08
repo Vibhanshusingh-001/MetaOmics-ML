@@ -69,19 +69,6 @@ Anaconda, Miniconda, and Conda solve this by providing:
 
 ---
 
-## **Key Takeaways**
-
-* **Anaconda, Miniconda, and Conda are not three separate tools but parts of the same ecosystem.**
-* Anaconda is like a full package distribution (everything included).
-* Miniconda is a minimal starter pack (install what you need).
-* Conda is the manager that controls everything (installs, updates, organizes, and manages environments).
-* The main goal is to make machine learning and data science projects:
-
-  * **Reproducible** → same results across different systems.
-  * **Shareable** → colleagues can easily use the same setup.
-  * **Organized** → each project has its own environment, avoiding conflicts.
-
----
 
 ## 🔹 Visual Analogy
 
@@ -102,8 +89,6 @@ Anaconda, Miniconda, and Conda solve this by providing:
      +---------------------+
 ```
 
----
-
 ## 🔹 When to Choose What?
 
 | **Choose...** | **If You Want...**                                                                     |
@@ -114,7 +99,6 @@ Anaconda, Miniconda, and Conda solve this by providing:
 
 ---
 
----
 
 ## 🔹 Example Workflow
 
@@ -126,5 +110,5 @@ Anaconda, Miniconda, and Conda solve this by providing:
 6. Export the environment.
 7. Recreate the environment later on the same or a different machine.
 
----
+
 
