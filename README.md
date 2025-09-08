@@ -8,16 +8,16 @@
 
 **MetaOmics-ML** is an open-source project that integrates **bioinformatics pipelines** with **machine learning workflows** to solve real-world biological challenges.  
 
-From **raw sequencing reads → taxonomic/functional profiles → ML models → biological insights**, this repository provides a **complete end-to-end framework** for microbiome-based prediction, classification, and discovery.  
+From **raw sequencing reads → taxonomic/functional profiles → ML models → biological insights**, this repository provides a **complete end-to-end framework** for microbiome-based prediction and classification.  
 
 ---
 
 ## 📘 Why MetaOmics-ML?  
 
-Metagenomics has revolutionized our understanding of microbial communities. However, **high-dimensional data** and **complex biological patterns** often require **advanced computational approaches**.  
+Metagenomics can revolutionized our understanding of microbial communities. However, **high-dimensional data** and **complex biological patterns** often require **advanced computational approaches**.  
 
 🔹 Traditional bioinformatics pipelines can process and classify reads.  
-🔹 Machine learning can detect hidden patterns, classify disease states, predict antimicrobial resistance (AMR), and generate actionable insights.  
+🔹 Machine learning can detect hidden patterns and classify disease states and generate actionable insights.  
 
 **MetaOmics-ML bridges this gap** by offering workflows that combine both worlds.  
 <p align="center">
@@ -44,7 +44,7 @@ Essential pipelines for data preprocessing and microbial profiling:
 ### 🗂️ 2. meta_data/  
 Documentation on **how to prepare metadata**:  
 - Sample identifiers  
-- Experimental conditions (e.g., healthy vs diseased)  
+- Experimental conditions ( healthy vs diseased)  
 - Sequencing platform & run details  
 - Host/environmental factors  
 
@@ -53,13 +53,12 @@ Documentation on **how to prepare metadata**:
 ---
 
 ### 🌱 3. metagenomics/  
-Educational material explaining:  
+ 
 - What **metagenomics** is and why it matters  
-- **Techniques:** Shotgun metagenomics, Amplicon sequencing, Metatranscriptomics  
+- **Techniques:** Shotgun metagenomics, 16s metagenomics, ITS(Internal Transcribed Spacer)  
 - **Applications:**  
   - 🧫 Microbiome diversity profiling  
   - 🦠 Pathogen identification  
-  - 💊 AMR gene discovery  
   - 🌍 Environmental monitoring (soil, water, climate microbiomes)  
 
 ---
@@ -83,11 +82,11 @@ Complete ML pipeline for metagenomics data:
 |------|-------------|---------------|
 | 1️⃣ Raw Data | Sequencing reads (FASTQ) | Illumina, Nanopore |
 | 2️⃣ Bioinfopipelines 🧬 | QC, trimming, alignment, taxonomic classification | FastQC, Fastp, Bowtie2, Kraken2, Bracken |
-| 3️⃣ Processed Profiles 📊 | Clean microbial abundance profiles | Bracken, custom scripts |
-| 4️⃣ Metadata Integration 🗂️ | Combine experimental & clinical metadata | Manual/automated curation |
-| 5️⃣ Feature Tables | OTU/ASV/taxa-level data | BIOM tables, pandas |
-| 6️⃣ Machine Learning 🤖 | Model building, tuning, evaluation | scikit-learn, XGBoost |
-| 7️⃣ Insights 🌍 | Disease prediction, AMR analysis, microbiome research | Visualization, ML interpretation |
+| 3️⃣ Processed Profiles 📊 | Clean microbial abundance profiles | Bracken, custom commands |
+| 4️⃣ Metadata Integration 🗂️ | Combine experimental & clinical metadata | Manual curation |
+| 5️⃣ Feature Tables | OTU/taxa-level data | kraken2, Braken
+| 6️⃣ Machine Learning 🤖 | Model building, tuning, evaluation | Scikit-learn
+| 7️⃣ Insights 🌍 | Disease prediction,  microbiome research | Visualization, ML interpretation |
 
 
 ---
@@ -98,10 +97,7 @@ Complete ML pipeline for metagenomics data:
 * **Case 1: Disease Classification**
   Train ML models to classify **healthy vs diseased** microbiome samples.
 
-* **Case 2: AMR Gene Prediction**
-  Predict **antimicrobial resistance genes** from microbial community features.
-
-* **Case 3: Environmental Microbiome Analysis**
+* **Case 2: Environmental Microbiome Analysis**
   Link microbial diversity to **soil quality, water pollution, or climate change factors**.
 
 ---
@@ -109,7 +105,7 @@ Complete ML pipeline for metagenomics data:
 ## 🖥️ Tech Stack
 
 * **Languages:** Python, Bash
-* **ML Frameworks:** scikit-learn, XGBoost, LightGBM, TensorFlow (planned)
+* **ML Frameworks:** scikit-learn
 * **Bioinformatics Tools:** Kraken2, Bracken, Bowtie2, FastQC, Fastp
 * **Package Management:** Conda, pip
 * **Visualization:** matplotlib, seaborn, plotly
@@ -132,7 +128,7 @@ You can try this framework using publicly available datasets:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YourUsername/MetaOmics-ML.git
+git clone https://github.com/Vibhanshusingh-001/MetaOmics-ML.git
 cd MetaOmics-ML
 ```
 
@@ -141,7 +137,6 @@ cd MetaOmics-ML
 ```bash
 conda create -n metaomics-ml python=3.10
 conda activate metaomics-ml
-pip install -r requirements.txt
 ```
 
 ### 3️⃣ Run Example Workflow
@@ -149,7 +144,7 @@ pip install -r requirements.txt
 1. Download data via `sra_run_selector`
 2. Preprocess reads with `fastp` and check QC with `fastqc`
 3. Classify sequences using `kraken2` and refine with `braken`
-4. Prepare metadata (`meta_data/`)
+4. Prepare metadata (`meta_data`)
 5. Build feature table & preprocess (`machine_learning/data_preprocessing/`)
 6. Train & evaluate models (`machine_learning/model_building/`)
 7. Save the trained model for reuse (`machine_learning/model_saving/`)
@@ -160,12 +155,9 @@ pip install -r requirements.txt
 
 MetaOmics-ML bridges the gap between **metagenomics** and **machine learning**, unlocking powerful real-world applications:  
 
-- In **clinical microbiome research**, it helps identify microbial biomarkers for early disease diagnostics.  
-- In **antimicrobial resistance**, it predicts resistance genes directly from sequencing data, aiding treatment strategies.  
+- In **clinical microbiome research**, it helps identify microbial biomarkers for disease diagnostics.   
 - In **public health**, it supports outbreak surveillance and detection of emerging microbial threats.  
-- For **environmental monitoring**, it tracks soil, marine, and wastewater microbial communities to assess ecosystem health.  
-- In **personalized medicine**, it enables microbiome-driven therapeutic interventions tailored to individual patients.  
-
+- For **environmental monitoring**, it tracks soil, marine, and wastewater microbial communities to assess ecosystem health.   
 
 ---
 
@@ -185,15 +177,11 @@ By using MetaOmics-ML, you will learn:
 
 * 🌐 Workflow automation with **Nextflow / Snakemake**
 * 🧠 Deep Learning for metagenomics (CNNs, RNNs)
-* 📊 Web-based dashboards for visualization (Streamlit/Plotly Dash)
-* 📂 Case studies with **real clinical and environmental datasets**
-* 🔎 Explainable AI (XAI) for biological interpretability of ML models
-
 ---
 
 ## 📜 License
 
-Released under the **MIT License**.
+ Under the **MIT License**.
 
 ---
 
