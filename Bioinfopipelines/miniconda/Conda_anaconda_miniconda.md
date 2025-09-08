@@ -57,7 +57,7 @@ Anaconda, Miniconda, and Conda solve this by providing:
 ---
 <img width="2000" height="577" alt="anaconda-miniconda-steps (1)" src="https://github.com/user-attachments/assets/d15c6221-4d8b-477d-ab02-8962c7166c62" />
 
-## **Analogy (to Make It Intuitive)**
+## **Analogy**
 
 * **Anaconda** = A giant **hardware store** already stocked with all the tools you may need.
 * **Miniconda** = An empty **workbench**, where you bring in tools one by one.
@@ -66,22 +66,6 @@ Anaconda, Miniconda, and Conda solve this by providing:
 
 ---
 <img width="1936" height="996" alt="anaconda-or-miniconda" src="https://github.com/user-attachments/assets/b28b4c7e-4cd7-4f2a-b339-64b2c94ac07a" />
-
-## **When to Choose Anaconda vs. Miniconda**
-
-* **Choose Anaconda if:**
-
-  * You are new to data science or ML.
-  * You want a “ready-to-go” environment with all common libraries already installed.
-  * You don’t mind using \~3 GB of space.
-
-* **Choose Miniconda if:**
-
-  * You want lightweight installation (\~200 MB).
-  * You prefer customizing your environment and only installing necessary packages.
-  * You are comfortable using Conda commands to add packages.
-
-👉 The important note is that **both Anaconda and Miniconda come with Conda**. So in the end, your workflow will look similar — the only difference is how much is pre-installed at the start.
 
 ---
 
@@ -132,7 +116,7 @@ Anaconda, Miniconda, and Conda solve this by providing:
 
 ---
 
-## 🔹 Example Workflow (Step by Step)
+## 🔹 Example Workflow
 
 1. Install **Anaconda** (full setup) or **Miniconda** (lightweight).
 2. Open a terminal and verify Conda is installed (`conda list`).
