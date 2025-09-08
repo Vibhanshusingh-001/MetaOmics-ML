@@ -1,5 +1,6 @@
 # Miniconda installation: 
 In this section, I’ll walk you through installing one of the most important package tools for bioinformatics — a key step to get you up and running with your projects.
+
 <img width="1197" height="222" alt="image" src="https://github.com/user-attachments/assets/cf960546-1fe3-432b-b423-7d9a761eadff" />
 
 
