@@ -14,7 +14,7 @@ It involves transforming raw data into a clean and usable format, ensuring bette
 - Handle **missing values** (remove, impute with mean/median/mode).
 - Remove **duplicates**.
 - Detect and handle **outliers**.
-- Ensure data consistency (units, formats, naming).
+- Ensure data consistency ( formats, naming).
 
 ---
 
@@ -34,8 +34,8 @@ It involves transforming raw data into a clean and usable format, ensuring bette
 ## 3. Feature Engineering ⚙️
 - Creating new features from existing ones to improve model performance.
 - Examples:
-  - Extracting **date features** (year, month, weekday).
-  - Combining attributes (e.g., BMI = weight/height²).
+  - Extracting **collective features**.
+  - Combining attributes.
   - Domain-specific transformations.
 
 ---
