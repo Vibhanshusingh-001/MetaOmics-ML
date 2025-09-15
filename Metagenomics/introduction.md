@@ -7,8 +7,6 @@ NGS has revolutionized genomics research by:
 - Cutting costs compared to earlier methods  
 - Powering discoveries in biology, medicine, and environmental science  
 
-From rare genetic disorders to microbiome studies and cancer genomics, NGS underpins precision medicine, targeted therapies, and advanced diagnostics. Platforms like **Illumina, PacBio, and Oxford Nanopore** allow sequencing of billions of fragments, turning what once took decades (e.g., the Human Genome Project) into routine experiments. The core steps include DNA/RNA extraction, library preparation, sequencing (often by *Sequencing-by-Synthesis*), and bioinformatics analysis.  
-
 ---
 
 
