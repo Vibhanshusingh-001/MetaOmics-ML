@@ -10,8 +10,20 @@ A high learning rate can cause the model to converge too quickly possibly skippi
 A low learning rate might lead to slower convergence and require more time and computational resources.
 Different models have different hyperparameters and they need to be tuned accordingly.
 
+## Example of Hyperparameters
+
+| Model Type                       | Example Hyperparameters                       |
+| -------------------------------- | --------------------------------------------- |
+| **Decision Tree**                | Max depth of the tree, min samples per leaf   |
+| **Random Forest**                | Number of trees, max features per tree        |
+| **Support Vector Machine (SVM)** | Kernel type (linear, rbf), C (regularization) |
+| **Neural Network**               | Learning rate, number of layers, batch size   |
+| **K-Nearest Neighbors (KNN)**    | Number of neighbors (k)                       |
+
+
 Techniques for Hyperparameter Tuning
-Models can have many hyperparameters and finding the best combination of parameters can be treated as a search problem. The two best strategies for Hyperparameter tuning are:
+Models can have many hyperparameters and finding the best combination of parameters can be treated as a search problem. The three best strategies for Hyperparameter tuning are:
+
 <img width="1300" height="404" alt="Screenshot 2025-09-04 083059" src="https://github.com/user-attachments/assets/d8f95a86-d0db-42a1-bb9c-86afb8c245b8" />
 
 # Methods
