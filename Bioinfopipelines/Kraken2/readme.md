@@ -8,11 +8,11 @@ It is widely used in **metagenomics**, **microbiome studies**, and **pathogen de
 
 ## Key Features
 
-- **Speed & Efficiency**: Uses an improved indexing strategy and a reduced memory footprint compared to **Kraken 1**.  
-- **Exact Alignment of k-mers**: Matches k-mers from reads to a database of reference genomes.  
-- **Low Memory Requirement**: Smaller database sizes while maintaining high accuracy.  
-- **Custom Database Support**: Users can build their own databases with genomes of interest.  
-- **Classification at Multiple Taxonomic Levels**: Classifies sequences from **domain** down to **species or strain**.  
+- **Speed & Efficiency** 
+- **Exact Alignment of k-mers**
+- **Low Memory Requirement**
+- **Custom Database Support**
+- **Classification at Multiple Taxonomic Levels**
 
 ---
 
@@ -48,8 +48,6 @@ kraken2-build --download-library bacteria --db kraken2_db
 * **--download-library bacteria** : Downloads the reference genome library for *bacteria* from NCBI RefSeq.
 * **--db kraken2\_db** : Specifies the name/location of the database directory (`kraken2_db`) where the library files will be stored.
 
-✅ This command downloads all bacterial reference genomes needed for classification.
-
 ---
 
 ## Command 2: Building the Database
@@ -64,7 +62,7 @@ kraken2-build --build --db kraken2_db
 * **--build** : Processes the downloaded reference sequences to construct the Kraken 2 database.
 * **--db kraken2\_db** : Tells Kraken 2 which database directory to use (`kraken2_db`).
 
-✅ This command builds the actual **searchable classification database** from the downloaded bacterial genomes.
+ This command builds the actual **searchable classification database** from the downloaded bacterial genomes.
 
 ---
 ## Command 3: Running the command 
@@ -108,7 +106,7 @@ This command runs **Kraken 2** on paired-end sequencing reads that have already 
   * `.unclassified.fastq` → Reads not assigned to any taxa.
   * `.kraken2.out` → Detailed per-read classification.
 * **Performance**: Uses 32 threads for faster computation.
-  ### 📦 Database Requirements (need)
+  ### 📦 Database Requirements
 
 - **Kraken2 Database**  
   Based on the **Unified Human Gastrointestinal Genome (UHGG) v2.0.2**  
