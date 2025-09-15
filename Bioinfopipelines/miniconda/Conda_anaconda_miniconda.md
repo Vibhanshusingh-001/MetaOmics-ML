@@ -70,36 +70,6 @@ Anaconda, Miniconda, and Conda solve this by providing:
 ---
 
 
-## 🔹 Visual Analogy
-
-```
-     +---------------------+
-     |   Anaconda          |  → Full shop with all tools
-     +---------------------+
-               |
-               | uses Conda
-               v
-     +---------------------+
-     |   Conda             |  → The assistant that installs/organizes tools
-     +---------------------+
-               ^
-               |
-     +---------------------+
-     |   Miniconda         |  → Empty workbench (you add tools)
-     +---------------------+
-```
-
-## 🔹 When to Choose What?
-
-| **Choose...** | **If You Want...**                                                                     |
-| ------------- | -------------------------------------------------------------------------------------- |
-| **Anaconda**  | A beginner-friendly, ready-to-use package with almost everything pre-installed.        |
-| **Miniconda** | Lightweight setup, minimal space usage, and flexibility to install only what you need. |
-| **Conda**     | The package/environment manager (always included in both).                             |
-
----
-
-
 ## 🔹 Example Workflow
 
 1. Install **Anaconda** (full setup) or **Miniconda** (lightweight).
