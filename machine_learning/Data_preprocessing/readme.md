@@ -6,11 +6,11 @@ It involves transforming raw data into a clean and usable format, ensuring bette
 ---
 <img width="987" height="407" alt="image" src="https://github.com/user-attachments/assets/a120afc9-229c-4c20-98f8-bfea9e383e56" />
 
-## 🔑 General Steps in Data Preprocessing
+##  General Steps in Data Preprocessing
 
 ---
 
-## 1. Data Cleaning 🧹
+## 1. Data Cleaning 
 - Handle **missing values** (remove, impute with mean/median/mode).
 - Remove **duplicates**.
 - Detect and handle **outliers**.
@@ -18,7 +18,7 @@ It involves transforming raw data into a clean and usable format, ensuring bette
 
 ---
 
-## 2. Dimensionality Reduction 📉
+## 2. Dimensionality Reduction 
 - Reduces the number of input features while retaining important information.
 - Techniques:
   - **PCA (Principal Component Analysis)**
@@ -31,7 +31,7 @@ It involves transforming raw data into a clean and usable format, ensuring bette
 
 ---
 
-## 3. Feature Engineering ⚙️
+## 3. Feature Engineering 
 - Creating new features from existing ones to improve model performance.
 - Examples:
   - Extracting **collective features**.
@@ -40,7 +40,7 @@ It involves transforming raw data into a clean and usable format, ensuring bette
 
 ---
 
-## 4. Sampling Data 📊
+## 4. Sampling Data 
 - Selecting a subset of data to train the model efficiently.
 - Techniques:
   - **Random Sampling**: Select random records.
@@ -49,7 +49,7 @@ It involves transforming raw data into a clean and usable format, ensuring bette
 
 ---
 
-## 5. Data Transformation 🔄
+## 5. Data Transformation 
 - Scaling and normalizing features:
   - **Normalization (Min-Max Scaling)** → Values between 0 and 1.
   - **Standardization (Z-score scaling)** → Mean = 0, Std Dev = 1.
@@ -60,21 +60,10 @@ It involves transforming raw data into a clean and usable format, ensuring bette
 
 ---
 
-## 6. Handling Imbalanced Data ⚖️
+## 6. Handling Imbalanced Data 
 - Problem: Some classes have many more samples than others.
 - Solutions:
   - **Oversampling** minority class (e.g., SMOTE).
   - **Undersampling** majority class.
   - Using **class weights** in algorithms.
   - Ensemble methods (e.g., Balanced Random Forest).
-
----
-
-# ✅ Final Summary
-Data preprocessing ensures:
-- Clean and reliable input data.
-- Balanced and representative datasets.
-- Improved **accuracy**, **speed**, and **generalization** of ML models.
-
----
-
